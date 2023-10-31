@@ -23,9 +23,12 @@ body {
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
-  border: 2px solid white;
+  border: 1px solid rgb(255, 73, 119);
   outline: none;
   background-color: rgb(204, 213, 216);
+  border-radius: 50px;
+  margin: 7px;
+  text-align: center;
 }
 
 .calculator-grid > button:hover,
@@ -39,7 +42,7 @@ body {
 
 .output {
   grid-column: 1 / -1;
-  background-color: rgba(141, 135, 135, 0.808);
+  background: linear-gradient(90deg, rgb(36, 0, 0) 0%, rgb(121, 9, 52) 0%, rgb(255, 0, 98) 100%);  
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -47,7 +50,8 @@ body {
   padding: .75rem;
   word-wrap: break-word;
   word-break: break-all;
-
+border-radius: 10px;
+margin-bottom: 10px;
 }
 
 .output .previous-operand {

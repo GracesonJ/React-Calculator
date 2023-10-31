@@ -148,10 +148,10 @@ function App() {
         className="span-two text-danger"
         onClick={() => dispatch({ type: ACTIONS.CLEAR })}
       >
-        AC
+        <h3>AC</h3>
       </button>
       <button className="text-danger" onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
-        DEL
+        <h3>DEL</h3>
       </button>
       <OperationButton operation="÷" dispatch={dispatch} />
       <DigitButton digit="1" dispatch={dispatch} />
@@ -169,7 +169,7 @@ function App() {
       <DigitButton digit="." dispatch={dispatch} />
       <DigitButton digit="0" dispatch={dispatch} />
       <button
-        className="span-two text-light bg-danger"
+        className="span-two text-light" style={{background:"linear-gradient(90deg, rgb(36, 0, 0) 0%, rgb(121, 9, 52) 0%, rgb(255, 0, 98) 100%)"}}
         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
       >
         =
