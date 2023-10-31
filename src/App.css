@@ -1,18 +1,23 @@
-*, *::before, *::after {
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #970366, #011b19);
+  background: black;
 }
 
 .calculator-grid {
   display: grid;
-  margin-top: 1rem;
+  margin: 1rem 0 1rem 0;
   justify-content: center;
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  width: 70%;
+  margin-left: 15%;
+  height: 70vh;
 }
 
 .calculator-grid > button {
@@ -34,7 +39,7 @@ body {
 
 .output {
   grid-column: 1 / -1;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(141, 135, 135, 0.808);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -42,6 +47,7 @@ body {
   padding: .75rem;
   word-wrap: break-word;
   word-break: break-all;
+
 }
 
 .output .previous-operand {

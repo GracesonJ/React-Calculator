@@ -169,7 +169,7 @@ function App() {
       <DigitButton digit="." dispatch={dispatch} />
       <DigitButton digit="0" dispatch={dispatch} />
       <button
-        className="span-two text-danger"
+        className="span-two text-light bg-danger"
         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
       >
         =

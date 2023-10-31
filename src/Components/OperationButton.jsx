@@ -2,7 +2,7 @@ import { ACTIONS } from "../App"
 
 export default function OperationButton({ dispatch, operation }) {
   return (
-    <button className="text-danger"
+    <button className="text-danger fs-2"
       onClick={() =>
         dispatch({ type: ACTIONS.CHOOSE_OPERATION, payload: { operation } })
       }
