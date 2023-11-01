@@ -29,6 +29,7 @@ body {
   border-radius: 50px;
   margin: 7px;
   text-align: center;
+  
 }
 
 .calculator-grid > button:hover,
@@ -38,8 +39,13 @@ body {
 
 .span-two {
   grid-column: span 2;
+  
 }
 
+.span-two > button:hover,
+.span-two > button:focus {
+  background-color: rgb(255, 73, 119);
+}
 .output {
   grid-column: 1 / -1;
   background: linear-gradient(90deg, rgb(36, 0, 0) 0%, rgb(121, 9, 52) 0%, rgb(255, 0, 98) 100%);  

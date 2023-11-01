@@ -145,31 +145,34 @@ function App() {
         <div className="current-operand">{formatOperand(currentOperand)}</div>
       </div>
       <button
-        className="span-two text-danger"
+        className="span-two text-danger" style={{borderRadius:'20px'}}
         onClick={() => dispatch({ type: ACTIONS.CLEAR })}
       >
         <h3>AC</h3>
       </button>
       <button className="text-danger" onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
-        <h3>DEL</h3>
+        <h3>DE</h3>
       </button>
       <OperationButton operation="÷" dispatch={dispatch} />
-      <DigitButton digit="1" dispatch={dispatch} />
-      <DigitButton digit="2" dispatch={dispatch} />
-      <DigitButton digit="3" dispatch={dispatch} />
+      <DigitButton digit="7" dispatch={dispatch} />
+      <DigitButton digit="8" dispatch={dispatch} />
+      <DigitButton digit="9" dispatch={dispatch} />
+
       <OperationButton operation="*" dispatch={dispatch} />
       <DigitButton digit="4" dispatch={dispatch} />
       <DigitButton digit="5" dispatch={dispatch} />
       <DigitButton digit="6" dispatch={dispatch} />
+
       <OperationButton operation="+" dispatch={dispatch} />
-      <DigitButton digit="7" dispatch={dispatch} />
-      <DigitButton digit="8" dispatch={dispatch} />
-      <DigitButton digit="9" dispatch={dispatch} />
+      <DigitButton digit="1" dispatch={dispatch} />
+      <DigitButton digit="2" dispatch={dispatch} />
+      <DigitButton digit="3" dispatch={dispatch} />
+
       <OperationButton operation="-" dispatch={dispatch} />
       <DigitButton digit="." dispatch={dispatch} />
       <DigitButton digit="0" dispatch={dispatch} />
       <button
-        className="span-two text-light" style={{background:"linear-gradient(90deg, rgb(36, 0, 0) 0%, rgb(121, 9, 52) 0%, rgb(255, 0, 98) 100%)"}}
+        className="span-two text-light" style={{background:"linear-gradient(90deg, rgb(36, 0, 0) 0%, rgb(121, 9, 52) 0%, rgb(255, 0, 98) 100%)", borderRadius:'20px'}}
         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
       >
         =
